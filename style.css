@@ -1,27 +1,4 @@
-/* ==========================================================================
-   AMAN PATEL — PORTFOLIO STYLESHEET
-   Table of Contents:
-   1. CSS Variables & Root Settings
-   2. Reset & Base Styles
-   3. Utility Classes
-   4. Navbar
-   5. Hero Section
-   6. Buttons
-   7. About Section
-   8. Projects Section
-   9. Skills Section
-   10. Contact Section
-   11. Footer & Back to Top
-   12. Scroll Animations
-   13. Responsive Adjustments
-   ========================================================================== */
-
-
-/* ==========================================================================
-   1. CSS VARIABLES & ROOT SETTINGS
-   ========================================================================== */
 :root {
-  /* Color palette */
   --bg: #0f172a;
   --surface: #111827;
   --surface-light: #1a2436;
@@ -30,28 +7,17 @@
   --accent-soft: rgba(96, 165, 250, 0.12);
   --text-secondary: #94a3b8;
   --border-color: rgba(255, 255, 255, 0.08);
-
-  /* Typography */
   --font-primary: 'Poppins', sans-serif;
-
-  /* Spacing system */
   --section-padding-y: 6rem;
   --section-padding-y-mobile: 4rem;
-
-  /* Transitions */
   --transition-fast: 0.2s ease;
   --transition-base: 0.35s ease;
   --transition-slow: 0.6s ease;
-
-  /* Shadows */
   --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.35);
   --shadow-strong: 0 20px 50px rgba(0, 0, 0, 0.5);
 }
 
 
-/* ==========================================================================
-   2. RESET & BASE STYLES
-   ========================================================================== */
 *,
 *::before,
 *::after {
@@ -92,7 +58,6 @@ img {
   display: block;
 }
 
-/* Skip link for accessibility */
 .skip-link {
   position: absolute;
   top: 0;
@@ -103,7 +68,6 @@ img {
   z-index: 2000;
 }
 
-/* Visible focus state for accessibility */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -112,7 +76,6 @@ textarea:focus-visible {
   outline-offset: 3px;
 }
 
-/* Respect reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -124,9 +87,6 @@ textarea:focus-visible {
 }
 
 
-/* ==========================================================================
-   3. UTILITY CLASSES
-   ========================================================================== */
 .section-padding {
   padding: var(--section-padding-y) 0;
 }
@@ -165,9 +125,6 @@ textarea:focus-visible {
 }
 
 
-/* ==========================================================================
-   4. NAVBAR
-   ========================================================================== */
 .glass-nav {
   background: rgba(15, 23, 42, 0.55);
   backdrop-filter: blur(16px);
@@ -192,7 +149,6 @@ textarea:focus-visible {
   color: var(--primary);
 }
 
-/* Image-based logo in the navbar */
 .navbar-logo {
   height: 38px;
   width: auto;
@@ -219,7 +175,6 @@ textarea:focus-visible {
   color: var(--primary);
 }
 
-/* Active link underline indicator */
 .navbar-nav .nav-link::after {
   content: '';
   position: absolute;
@@ -252,9 +207,6 @@ textarea:focus-visible {
 }
 
 
-/* ==========================================================================
-   5. HERO SECTION
-   ========================================================================== */
 .hero-section {
   min-height: 100vh;
   padding-top: 7rem;
@@ -302,7 +254,6 @@ textarea:focus-visible {
   margin-bottom: 1rem;
 }
 
-/* Portrait image */
 .hero-image-wrapper {
   position: relative;
   max-width: 480px;
@@ -339,7 +290,6 @@ textarea:focus-visible {
   border-radius: 50%;
 }
 
-/* Scroll indicator */
 .scroll-indicator {
   position: absolute;
   bottom: 2rem;
@@ -371,9 +321,6 @@ textarea:focus-visible {
 }
 
 
-/* ==========================================================================
-   6. BUTTONS
-   ========================================================================== */
 .btn-primary-custom {
   background-color: var(--accent);
   border: 1px solid var(--accent);
@@ -422,9 +369,6 @@ textarea:focus-visible {
 }
 
 
-/* ==========================================================================
-   7. ABOUT SECTION
-   ========================================================================== */
 .about-text {
   margin-bottom: 1.25rem;
   font-size: 1.02rem;
@@ -470,9 +414,6 @@ textarea:focus-visible {
 }
 
 
-/* ==========================================================================
-   8. PROJECTS SECTION
-   ========================================================================== */
 .view-all-link {
   font-weight: 600;
   color: var(--primary);
@@ -562,9 +503,6 @@ textarea:focus-visible {
 }
 
 
-/* ==========================================================================
-   9. SKILLS SECTION
-   ========================================================================== */
 .skill-card {
   background-color: var(--surface);
   border: 1px solid var(--border-color);
@@ -626,9 +564,6 @@ textarea:focus-visible {
 }
 
 
-/* ==========================================================================
-   10. CONTACT SECTION
-   ========================================================================== */
 .contact-info-card {
   background-color: var(--bg);
   border: 1px solid var(--border-color);
@@ -667,7 +602,6 @@ textarea:focus-visible {
   color: var(--accent);
 }
 
-/* Social icons */
 .social-icons {
   display: flex;
   justify-content: center;
@@ -694,7 +628,6 @@ textarea:focus-visible {
   transform: translateY(-4px);
 }
 
-/* Contact form */
 .contact-form .form-label {
   color: var(--text-secondary);
   font-size: 0.9rem;
@@ -737,9 +670,6 @@ textarea:focus-visible {
 }
 
 
-/* ==========================================================================
-   11. FOOTER & BACK TO TOP
-   ========================================================================== */
 .footer {
   background-color: var(--surface);
   border-top: 1px solid var(--border-color);
@@ -790,10 +720,6 @@ textarea:focus-visible {
   transform: translateY(-4px);
 }
 
-
-/* ==========================================================================
-   12. SCROLL ANIMATIONS
-   ========================================================================== */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -806,11 +732,6 @@ textarea:focus-visible {
 }
 
 
-/* ==========================================================================
-   13. RESPONSIVE ADJUSTMENTS
-   ========================================================================== */
-
-/* Tablet and below: reduce section padding */
 @media (max-width: 991.98px) {
   .section-padding {
     padding: var(--section-padding-y-mobile) 0;
@@ -834,7 +755,6 @@ textarea:focus-visible {
   }
 }
 
-/* Mobile */
 @media (max-width: 575.98px) {
   .hero-image-wrapper {
     max-width: 320px;
