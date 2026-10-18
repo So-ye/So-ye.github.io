@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Activities | Ivan De la Peña</title>
+  <meta name="description" content="School activities, exercises, and hands-on practice work by Ivan De la Peña." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="activities.css">
+</head>
+<body>
+
+  <a class="skip-link visually-hidden-focusable" href="#main">Skip to main content</a>
+
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav" id="mainNav" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand logo" href="index.html">
+          <img src="images/logo.png" alt="Ivan De la Peña logo" class="navbar-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+          aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link active" href="activities.html" aria-current="page">Activities</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <a class="btn btn-outline-light btn-sm rounded-pill px-4" href="assets/resume.pdf" download>
+                <i class="bi bi-download me-1"></i> Resume
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="activities-hero" aria-label="Activities overview">
+      <div class="container">
+        <a href="index.html#projects" class="back-link"><i class="bi bi-arrow-left me-2"></i>Back to projects</a>
+        <h1 class="activities-title">My Activities</h1>
+        <p class="activities-intro">
+          School activities, exercises, and hands-on practice. Select a card to open the activity.
+        </p>
+      </div>
+    </section>
+
+    <section class="activities-list-section" aria-label="Activity list">
+      <div class="container">
+        <ul class="activity-grid">
+
+          <li>
+            <a href="https://so-ye.github.io/Activities/Bento/" class="activity-card">
+              <span class="status-pill upcoming">Done</span>
+              <h2 class="activity-name">Bento Layout</h2>
+              <p class="activity-desc">Build a responsive bento-style layout using CSS Grid, focusing on spacing, alignment, and mobile behavior.</p>
+              <ul class="activity-tags"><li>HTML</li><li>CSS Grid</li></ul>
+              <span class="activity-open">View activity <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i></span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="activity-card">
+              <span class="status-pill upcoming">Upcoming</span>
+              <h2 class="activity-name">Upcoming</h2>
+              <p class="activity-desc">Upcoming</p>
+              <ul class="activity-tags"><li>Upcoming</li><li>Upcoming</li></ul>
+              <span class="activity-open">View activity<i class="bi bi-arrow-right ms-2" aria-hidden="true"></i></span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="activity-card">
+              <span class="status-pill upcoming">Upcoming</span>
+              <h2 class="activity-name">Upcoming</h2>
+              <p class="activity-desc">Upcoming</p>
+              <ul class="activity-tags"><li>Upcoming</li><li>Upcoming</li></ul>
+              <span class="activity-open">View activity<i class="bi bi-arrow-right ms-2" aria-hidden="true"></i></span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="activity-card">
+              <span class="status-pill upcoming">Upcoming</span>
+              <h2 class="activity-name">Upcoming</h2>
+              <p class="activity-desc">Upcoming</p>
+              <ul class="activity-tags"><li>Upcoming</li><li>Upcoming</li></ul>
+              <span class="activity-open">View activity <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i></span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="activity-card">
+              <span class="status-pill upcoming">Upcoming</span>
+              <h2 class="activity-name">Upcoming</h2>
+              <p class="activity-desc">Upcoming</p>
+              <ul class="activity-tags"><li>Upcoming</li><li>Upcoming</li></ul>
+              <span class="activity-open">View activity <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i></span>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <div class="col-md-6 text-center text-md-start">
+          <a href="index.html" class="logo footer-logo">ID<span class="accent-dot">.</span></a>
+          <p class="footer-text mb-0">&copy; <span id="year"></span> Ivan De la Peña. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p class="footer-text mb-0">Designed &amp; built with Bootstrap.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
